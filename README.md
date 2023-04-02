@@ -21,4 +21,6 @@ Then I can enter any information for that time of day
 When I click the save button
 Then it gets saved into local storage
 
-
+![Screenshot](img/1.png)
+![Screenshot](img/2.png)
+![Screenshot](img/3.png)
