@@ -23,15 +23,17 @@
 // var currentDate = moment().format("dddd, MMM D, YYYY");
 // $("#todaysDate").text(currentDate);
 
-var currentDate = dayjs();
-$('#today').text(currentDate.format("hh:mm:ss a"));
-var time =dayjs().hour();
+var currentDay = dayjs();
+$('#today').text(currentDay.format("hh:mm:ss a"));
+var time = dayjs().hour(); 
 
-// var time = moment().format("hh:mm:ss a");
+ // var time = moment().format("hh:mm:ss a");
+
+
 
 $(".time-block").ready(function() {
   var timeBlock = parseInt($(this).attr("id"));
-  if (time === timeBlock) {
+  if (time == timeBlock) {
     $(this).removeClass("past");
     $(this).removeClass("future");
     $(this).addClass("present");
